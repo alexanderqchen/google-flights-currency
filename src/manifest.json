@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Google Flights Currency Setter",
+  "description": "Sets your preferred currency on Google Flights. Currency will no longer be location-based.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png"
+    }
+  },
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://google.com/travel/flights*",
+    "*://www.google.com/travel/flights*"
+  ]
+}
